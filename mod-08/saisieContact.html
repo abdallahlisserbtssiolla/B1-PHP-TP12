@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanayaBio</title>
+</head>
+<body>
+    <h1>Nous contacter :</h1>
+    <form action="recapituler.php" method="post">
+        <label for="civilite">Civilité:</label>
+			<input type="radio" name="civilite" value="Mr"  /> M.
+			<input type="radio" name="civilite" value="Mme" /> Mme
+			<input type="radio" name="civilite" value="Mlle"  /> Mlle
+        <br />
+        <br />
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom"  />
+        <br />
+        <br />
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom"  />
+        <br />
+        <br />
+        
+        <label for="tel">Numéro de téléphone:</label>
+        <input type="tel" id="tel" name="tel"  />
+        <br />
+        <br />
+
+        <label for="email">Adresse électronique:</label>
+        <input type="email" id="email" name="email" size="25px" />
+        <br />
+        <br />
+        
+        <label for="raison">Modes de réponses:</label>
+        <select id="raison" name="raison">
+            <option value="SMS">SMS</option>
+            <option value="appel telephonique">Appel Téléphonique</option>
+            <option value="mail">Mail</option>
+        </select>
+        <br />
+        <br />
+	<label for="sujet">Sujet :</label>
+      <input type="text" id= "objet" name="objet" size="27px" /> 
+	<br />
+        <br />
+
+        <label for="message">Message complémentaire:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        
+                <br />
+        <br />
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+</html>
+
